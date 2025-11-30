@@ -1,5 +1,7 @@
 // client/src/pages/Home.jsx
 import React from 'react';
+import heroImg from '../images/hero-school.jpg';
+import '../styles/home.css';
 import { Award, Users, BookOpen, TrendingUp, Target, Heart, ChevronRight, Star } from 'lucide-react';
 
 const Home = ({ setCurrentPage }) => {
@@ -79,8 +81,8 @@ const Home = ({ setCurrentPage }) => {
                   onClick={() => setCurrentPage('registration')}
                 >
                   Apply for Admission
-                  <ChevronRight size={20} />
-                </button>
+                  <ChevronRight size={10} />
+                </button> &nbsp;
                 <button 
                   className="btn btn-outline btn-lg"
                   onClick={() => setCurrentPage('about')}
@@ -90,9 +92,9 @@ const Home = ({ setCurrentPage }) => {
               </div>
             </div>
             <div className="hero-image">
-              <div className="hero-image-wrapper">
-                <img src="/images/hero-school.jpg" alt="School Building" />
-              </div>
+            <div className="hero-image-wrapper">
+            <img src={heroImg} alt="School Building" />
+             </div>  
             </div>
           </div>
         </div>
@@ -205,7 +207,7 @@ const Home = ({ setCurrentPage }) => {
               onClick={() => setCurrentPage('registration')}
             >
               Apply Now
-              <ChevronRight size={20} />
+              <ChevronRight size={10} />
             </button>
           </div>
         </div>

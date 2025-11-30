@@ -1,5 +1,7 @@
 // client/src/pages/AboutUs.jsx
 import React, { useState } from 'react';
+import principalImg from '../images/team/principal.jpg';
+import schoolImg from '../images/about/school-building.jpg';
 import '../styles/aboutus.css';
 import { 
   Mail, 
@@ -50,7 +52,7 @@ const AboutUs = ({ setCurrentPage }) => {
     {
       name: ' Karim Bux Siyal',
       position: 'Principal',
-      image: '/images/team/principal.jpg',
+      image: principalImg,
       education: 'Ph.D. in Educational Leadership',
       experience: '25 years',
       email: 'principal@excellenceschool.edu',
@@ -201,7 +203,7 @@ const AboutUs = ({ setCurrentPage }) => {
               </p>
             </div>
             <div className="intro-image">
-              <img src="/images/about/school-building.jpg" alt="School Building" />
+             <img src={schoolImg} alt="School Building" />
               <div className="image-overlay">
                 <div className="overlay-content">
                   <Award size={48} />

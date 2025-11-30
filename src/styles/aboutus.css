@@ -4,7 +4,7 @@
 .aboutus-hero {
     position: relative;
     height: 400px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #938eed 0%, #ec79b2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,22 +42,22 @@
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
-    color: white;
+    color: rgb(80, 5, 156);
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   
   .aboutus-hero .hero-subtitle {
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(51, 13, 221, 0.977);
     max-width: 700px;
     margin: 0 auto;
   }
   
   /* Introduction Section */
   .introduction-section {
-    background-color: white;
-  }
+    background-color: #b1eaf1;
+}
   
   .introduction-content {
     display: grid;
@@ -68,7 +68,7 @@
   
   .intro-text .section-heading {
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 1.5rem;
   }
   
@@ -147,7 +147,7 @@
   
   .stat-item {
     text-align: center;
-    color: white;
+    color: rgb(105, 15, 15);
     padding: 2rem 1rem;
     border-radius: var(--border-radius-lg);
     background: rgba(255, 255, 255, 0.1);
@@ -156,7 +156,7 @@
   }
   
   .stat-item:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(131, 50, 138, 0.15);
     transform: translateY(-5px);
   }
   
@@ -167,28 +167,28 @@
     width: 64px;
     height: 64px;
     margin: 0 auto 1rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, rgba(136, 61, 235, 0.644), rgba(40, 196, 216, 0.05));
     border-radius: 50%;
-    color: white;
+    color: rgb(79, 45, 230);
   }
   
   .stat-value {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
-    color: white;
+    color: rgb(165, 96, 96);
   }
   
   .stat-label {
     font-size: 1.125rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(20, 126, 110, 0.95);
     margin: 0;
   }
   
   /* Mission & Vision Section */
   .mission-vision-section {
-    background-color: var(--light-color);
+   background-color: #9dd4fb;
   }
   
   .mission-vision-grid {
@@ -200,7 +200,7 @@
   
   .mission-card,
   .vision-card {
-    background: white;
+    background: #f49b9bf3;
     padding: 3rem;
     border-radius: var(--border-radius-xl);
     box-shadow: var(--shadow-lg);
@@ -221,15 +221,16 @@
     justify-content: center;
     border-radius: var(--border-radius-lg);
     margin-bottom: 1.5rem;
-    color: white;
+    color: rgb(110, 11, 232);
   }
   
   .mission-icon {
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #662cee 0%, #d97706 100%);
   }
   
   .vision-icon {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #662cee 0%, #d97706 100%);
+
   }
   
   .card-title {
@@ -258,7 +259,7 @@
   }
   
   .value-card {
-    background: white;
+    background: linear-gradient(135deg, #76abe8 0%, #a3c4f3 100%);
     padding: 2rem;
     border: 2px solid var(--border-color);
     border-radius: var(--border-radius-lg);
@@ -279,9 +280,9 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #8b5cf7 0%, #ef9c3e 100%);
     border-radius: 50%;
-    color: white;
+    color: rgba(91, 40, 234, 0.977);
   }
   
   .value-title {
@@ -299,7 +300,7 @@
   
   /* Leadership Section */
   .leadership-section {
-    background-color: var(--light-color);
+    background: linear-gradient(135deg, #a1c7ee 0%, #72ecf7 100%);
   }
   
   .leadership-grid {
@@ -310,7 +311,7 @@
   }
   
   .leader-card {
-    background: white;
+    background: linear-gradient(135deg, #bf83f8 0%, #f0f06a 100%);
     border-radius: var(--border-radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -345,7 +346,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(30, 58, 138, 0.9), transparent);
+    background: linear-gradient(to top, rgba(191, 113, 225, 0.85), rgba(178, 149, 190, 0.1));
+
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -394,10 +396,10 @@
   }
   
   .leader-description {
-    font-size: 0.95rem;
+    font-size: 0.99rem;
     color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1.3rem;
   }
   
   .leader-details {
@@ -555,20 +557,20 @@
   
   /* Social Media Section */
   .social-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #c47e7e, #ce9ff7);
     padding: 4rem 0;
     text-align: center;
   }
   
   .social-section h3 {
     font-size: 2rem;
-    color: white;
+    color: rgb(112, 12, 12);
     margin-bottom: 1rem;
   }
   
   .social-section p {
     font-size: 1.125rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
     margin-bottom: 2rem;
   }
   
@@ -585,23 +587,28 @@
     justify-content: center;
     width: 56px;
     height: 56px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(
+      120deg,
+      rgb(69, 116, 244),
+      rgba(253, 116, 116, 0.616)
+    );
+    
     border-radius: 50%;
     color: white;
     transition: all 0.3s ease;
   }
   
   .social-link:hover {
-    background-color: white;
+    background-color: rgb(10, 9, 9);
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
   
-  .social-link.facebook:hover { color: #1877f2; }
+  .social-link.facebook:hover { color: #095bc5; }
   .social-link.twitter:hover { color: #1da1f2; }
-  .social-link.instagram:hover { color: #e4405f; }
+  .social-link.instagram:hover { color: #f43f60; }
   .social-link.youtube:hover { color: #ff0000; }
-  .social-link.linkedin:hover { color: #0077b5; }
+  .social-link.linkedin:hover { color: #0083c9f9; }
   
   /* Responsive Design */
   @media (max-width: 1024px) {

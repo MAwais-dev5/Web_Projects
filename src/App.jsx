@@ -8,6 +8,8 @@ import Navbar from './pages/Navbar'
 import Academics from './pages/Academics'
 import Gallery from './pages/Gallery'
 import History from './pages/History'
+// import Registration from './pages/Registraton'
+// import School from './pages/School'
 import './App.css'
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
       <Academics/>
       <Gallery/>
       <History/>
+      {/* <Registration/>
+      <School/> */}
 
 
 

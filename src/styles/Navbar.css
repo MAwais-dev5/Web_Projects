@@ -7,14 +7,14 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: white;
+    background-color: rgb(40, 244, 227);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .navbar-scrolled {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: rgb(40, 244, 227);
     backdrop-filter: blur(10px);
   }
   
@@ -46,14 +46,14 @@
     justify-content: center;
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, rgb(175, 80, 215) 0%, rgb(156, 79, 238) 100%);
     border-radius: 12px;
     flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
+    box-shadow: 0 4px 12px rgba(46, 90, 214, 0.92);
   }
   
   .logo-icon {
-    color: white;
+    color: rgba(1, 1, 0, 0.733);
     flex-shrink: 0;
   }
   
@@ -66,14 +66,14 @@
   .logo-title {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: rgb(37, 124, 223);
     line-height: 1.2;
     letter-spacing: -0.02em;
   }
   
   .logo-tagline {
     font-size: 0.75rem;
-    color: var(--text-secondary);
+    color: rgba(69, 8, 113, 0.804);
     font-weight: 500;
     letter-spacing: 0.02em;
   }
@@ -96,7 +96,7 @@
     padding: 0.625rem 1rem;
     font-size: 0.95rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: rgb(60, 41, 122);
     cursor: pointer;
     border-radius: var(--border-radius-md);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -106,13 +106,13 @@
   
   .nav-link:hover {
     color: var(--secondary-color);
-    background-color: rgba(59, 130, 246, 0.08);
+    background-color: rgba(35, 201, 85, 0.993);
   }
   
   .nav-link.active {
-    color: white;
+    color: rgb(150, 163, 54);
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 2px 8px rgba(9, 122, 147, 0.888);
   }
   
   /* User Actions */
@@ -145,21 +145,22 @@
     border-radius: var(--border-radius-md);
     cursor: pointer;
     font-weight: 600;
-    color: var(--text-primary);
+    color: rgba(245, 106, 106, 0.89);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .user-button:hover {
-    background-color: var(--border-color);
-    border-color: var(--secondary-color);
-  }
+    background-color: rgb(1, 172, 229); /* Deep Sky Blue */
+    border-color: rgb(30, 144, 255);   /* Dodger Blue */
+}
+
   
   .user-avatar {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, rgb(142, 68, 173) 0%, rgb(177, 140, 217) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,7 +174,7 @@
   }
   
   .avatar-initials {
-    color: white;
+    color: rgb(78, 11, 155);
     font-size: 0.875rem;
     font-weight: 700;
   }
@@ -201,7 +202,7 @@
     top: calc(100% + 0.75rem);
     right: 0;
     min-width: 280px;
-    background: white;
+    background: rgb(187, 37, 37);
     border-radius: var(--border-radius-lg);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -232,7 +233,7 @@
     height: 64px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: white;
+    background: linear-gradient(135deg, rgb(0, 255, 255) 0%, rgb(0, 128, 128) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,7 +248,7 @@
   }
   
   .user-avatar-large .avatar-initials {
-    color: var(--primary-color);
+    color: rgb(255, 99, 71);
     font-size: 1.5rem;
   }
   
