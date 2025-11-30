@@ -112,7 +112,7 @@ const AboutUs = ({ setCurrentPage }) => {
 
   // Statistics
   const statistics = [
-    { value: '38+', label: 'Years of Excellence', icon: <Award /> },
+    { value: '38+', label: 'Years of GBHS', icon: <Award /> },
     { value: '2500+', label: 'Happy Students', icon: <Users /> },
     { value: '150+', label: 'Qualified Teachers', icon: <BookOpen /> },
     { value: '95%', label: 'Success Rate', icon: <TrendingUp /> }
@@ -170,9 +170,9 @@ const AboutUs = ({ setCurrentPage }) => {
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1 className="hero-title">About Excellence School</h1>
+            <h1 className="hero-title">About GBHS School Tharushah</h1>
             <p className="hero-subtitle">
-              Shaping Minds, Building Character, Inspiring Excellence Since 1985
+              Shaping Minds, Building Character, Inspiring GBHS Tharushah Since 1900
             </p>
           </div>
         </div>
@@ -185,7 +185,7 @@ const AboutUs = ({ setCurrentPage }) => {
             <div className="intro-text">
               <h2 className="section-heading">Welcome to Govt Boys High School Tharushah</h2>
               <p className="intro-description">
-                For over three decades, Excellence International School has been a beacon of quality 
+                For over three decades, Govt Boys High School Tharushah has been a beacon of quality 
                 education in Tharushah, Sindh. Established in 1900, we have consistently maintained our 
                 commitment to academic excellence, character building, and holistic development.
               </p>
@@ -205,7 +205,7 @@ const AboutUs = ({ setCurrentPage }) => {
               <div className="image-overlay">
                 <div className="overlay-content">
                   <Award size={48} />
-                  <h3>100 Years of Excellence</h3>
+                  <h3>100 Years of Govt Boys High School Tharushah</h3>
                   <p>Since 1900</p>
                 </div>
               </div>
