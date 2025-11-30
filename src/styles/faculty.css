@@ -43,6 +43,7 @@
     color: rgba(255, 255, 255, 0.95);
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
   }
   
   /* Faculty Stats Section */
@@ -63,7 +64,7 @@
   }
   
   .faculty-stats-section .stat-card {
-    background: white;
+    background: rgb(128, 253, 243);
     padding: 2rem;
     border-radius: var(--border-radius-xl);
     box-shadow: var(--shadow-lg);
@@ -81,13 +82,14 @@
   .faculty-stats-section .stat-icon {
     width: 64px;
     height: 64px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #84a9ec 0%, #ac45f5 100%);
+
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1rem;
-    color: white;
+    color: rgb(8, 8, 218);
   }
   
   .faculty-stats-section .stat-card h3 {
@@ -105,7 +107,7 @@
   
   /* Filter Section */
   .faculty-filter-section {
-    background-color: var(--light-color);
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
     padding: 2rem 0;
   }
   
@@ -120,7 +122,7 @@
     left: 1.25rem;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--text-secondary);
+    color: #556987; /* modern blue-gray, attractive and readable */
   }
   
   .search-input {
@@ -129,15 +131,16 @@
     font-size: 1rem;
     border: 2px solid var(--border-color);
     border-radius: var(--border-radius-lg);
-    background: white;
+    background: rgb(255, 249, 249);
     transition: all 0.3s ease;
   }
   
   .search-input:focus {
     outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+    border-color: #556987; /* modern blue-gray for focus border */
+    box-shadow: 0 0 0 4px rgba(85, 105, 135, 0.2); /* soft glow matching border color */
   }
+  
   
   .subject-filter {
     text-align: center;
@@ -150,7 +153,7 @@
     gap: 0.5rem;
     margin-bottom: 1.5rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: #1c5eb9;
     font-size: 1.125rem;
   }
   
@@ -163,7 +166,7 @@
   
   .subject-btn {
     padding: 0.75rem 1.5rem;
-    background: white;
+    background: rgb(209, 237, 107);
     border: 2px solid var(--border-color);
     border-radius: var(--border-radius-lg);
     font-weight: 600;
@@ -175,13 +178,13 @@
   
   .subject-btn:hover {
     border-color: var(--secondary-color);
-    background-color: rgba(59, 130, 246, 0.05);
+    background-color: rgba(8, 236, 232, 0.936);
     transform: translateY(-2px);
   }
   
   .subject-btn.active {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: white;
+    color: rgb(0, 0, 0);
     border-color: transparent;
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
   }
@@ -198,7 +201,7 @@
   
   .results-info p {
     font-size: 1rem;
-    color: var(--text-secondary);
+    color: #0421b3c6;
     font-weight: 500;
   }
   
@@ -209,7 +212,7 @@
   }
   
   .faculty-card {
-    background: white;
+    background: rgb(167, 220, 239);
     border-radius: var(--border-radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -247,7 +250,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(30, 58, 138, 0.95), transparent);
+    background: linear-gradient(
+  to top, 
+  rgba(119, 162, 221, 0.95), /* deep blue-gray for strong base */
+  rgba(255, 255, 255, 0.473)  /* smooth fade to transparent */
+);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -265,8 +272,9 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    background: white;
-    color: var(--primary-color);
+    background: #b11016; /* deep red, same as rgb(185,16,16) */
+    color: #ffffff;       /* bright text for high contrast */
+
     border: none;
     border-radius: var(--border-radius-md);
     font-weight: 600;
@@ -276,8 +284,9 @@
   }
   
   .view-profile-btn:hover {
-    background: var(--accent-color);
-    color: white;
+    background: #d82e2e; 
+    color: #7f1d1d;      
+    
     transform: scale(1.05);
   }
   
@@ -288,8 +297,8 @@
   .faculty-subject {
     display: inline-block;
     padding: 0.375rem 0.875rem;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: white;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c7ee1 100%);
+    color: rgb(255, 255, 255);
     border-radius: var(--border-radius-sm);
     font-size: 0.875rem;
     font-weight: 600;
@@ -298,13 +307,13 @@
   
   .faculty-name {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: #4f46e5;
     margin-bottom: 0.5rem;
   }
   
   .faculty-designation {
     font-size: 0.95rem;
-    color: var(--text-secondary);
+    color: #000000;
     margin-bottom: 1rem;
   }
   
@@ -313,15 +322,15 @@
     gap: 1.5rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
-  }
-  
+    border-bottom: 1px solid #d1d5db;
+  }  
   .meta-item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     font-size: 0.875rem;
-    color: var(--text-secondary);
+    color: #6c6f7f;
+
   }
   
   .meta-item svg {

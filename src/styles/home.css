@@ -3,7 +3,7 @@
 /* General Styles */
 .home-page {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    color: white;
     line-height: 1.6;
   }
   
@@ -62,12 +62,13 @@
   }
   
   .hero-title .highlight {
-    color: #0c0c0b;
+    color: #7a0606;
   }
   
   .hero-description {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 30px;
+    color: rgb(248, 239, 239);
   }
   
   .hero-buttons button {
@@ -85,7 +86,7 @@
   
   /* Stats Section */
   .stats-section {
-    background: linear-gradient(135deg, #8dacbb 0%, #a4ece6 100%);
+    background: linear-gradient(135deg, #13a1e8 0%, #a4ece6 100%);
     padding: 80px 0;
   }
   
@@ -154,7 +155,6 @@
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
     transition: all 0.3s ease;
   }
-  
   .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
@@ -286,7 +286,7 @@
   .cta-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #ad0c0c;
   }
   
   .cta-section p {
@@ -303,12 +303,13 @@
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
+      }
   
   .btn-lg {
     padding: 14px 28px;
     font-size: 18px;
   }
+  
   
   .btn-primary {
     background: #3b82f6;
@@ -322,14 +323,15 @@
   }
   
   .btn-outline {
-    background: transparent;
-    color: #0b0909;
-    border: 2px solid #0a0808;
+    background: #3b82f6;
+    color: white;
+    
   }
   
   .btn-outline:hover {
-    background: #3b82f6;
-    color: #fff;
+    background: #16ec76;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
   }
   
   .btn-accent {
