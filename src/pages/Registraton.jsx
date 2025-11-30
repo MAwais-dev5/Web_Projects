@@ -1,6 +1,5 @@
 // client/src/pages/Registration.jsx
 import React, { useState } from 'react';
-import '../styles/registration.css';
 import { 
   User,
   Mail,
@@ -26,6 +25,8 @@ import {
   UserPlus,
   LogIn
 } from 'lucide-react';
+import '../styles/registration.css';
+
 const Registration = ({ isLoggedIn, user }) => {
   const [step, setStep] = useState(isLoggedIn ? 1 : 0);
   const [showPassword, setShowPassword] = useState(false);
@@ -315,7 +316,240 @@ const Registration = ({ isLoggedIn, user }) => {
                       <Lock size={18} />
                       Password *
                     </label>
-                    <div className="password-input">
+                    <div className="form-group">
+                      <label className="form-label">State/Province *</label>
+                      <input
+                        type="text"
+                        name="state"
+                        className="form-control"
+                        placeholder="Enter state"
+                        value={formData.state}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="form-row">
+                    <div className="form-group">
+                      <label className="form-label">Zip/Postal Code *</label>
+                      <input
+                        type="text"
+                        name="zipCode"
+                        className={`form-control ${errors.zipCode ? 'error' : ''}`}
+                        placeholder="Enter zip code"
+                        value={formData.zipCode}
+                        onChange={handleInputChange}
+                      />
+                      {errors.zipCode && <span className="error-message">{errors.zipCode}</span>}
+                    </div>
+
+                    <div className="form-group">
+                      <label className="form-label">Country</label>
+                      <input
+                        type="text"
+                        name="country"
+                        className="form-control"
+                        value={formData.country}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Step 5: Documents */}
+              {step === 5 && (
+                <div className="form-step">
+                  <h2 className="step-heading">
+                    <FileText size={28} />
+                    Required Documents
+                  </h2>
+                  <p className="step-description">Upload the required documents (Max size: 5MB per file)</p>
+
+                  <div className="documents-grid">
+                    <div className="upload-box">
+                      <input
+                        type="file"
+                        id="birthCertificate"
+                        name="birthCertificate"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        onChange={handleFileChange}
+                        hidden
+                      />
+                      <label htmlFor="birthCertificate" className="upload-label">
+                        <Upload size={32} />
+                        <span>Birth Certificate *</span>
+                        {formData.birthCertificate ? (
+                          <span className="file-name">{formData.birthCertificate.name}</span>
+                        ) : (
+                          <span className="upload-hint">Click to upload</span>
+                        )}
+                      </label>
+                    </div>
+
+                    <div className="upload-box">
+                      <input
+                        type="file"
+                        id="previousMarksheet"
+                        name="previousMarksheet"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        onChange={handleFileChange}
+                        hidden
+                      />
+                      <label htmlFor="previousMarksheet" className="upload-label">
+                        <Upload size={32} />
+                        <span>Previous Marksheet</span>
+                        {formData.previousMarksheet ? (
+                          <span className="file-name">{formData.previousMarksheet.name}</span>
+                        ) : (
+                          <span className="upload-hint">Click to upload</span>
+                        )}
+                      </label>
+                    </div>
+
+                    <div className="upload-box">
+                      <input
+                        type="file"
+                        id="transferCertificate"
+                        name="transferCertificate"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        onChange={handleFileChange}
+                        hidden
+                      />
+                      <label htmlFor="transferCertificate" className="upload-label">
+                        <Upload size={32} />
+                        <span>Transfer Certificate</span>
+                        {formData.transferCertificate ? (
+                          <span className="file-name">{formData.transferCertificate.name}</span>
+                        ) : (
+                          <span className="upload-hint">Click to upload</span>
+                        )}
+                      </label>
+                    </div>
+
+                    <div className="upload-box">
+                      <input
+                        type="file"
+                        id="studentPhoto"
+                        name="studentPhoto"
+                        accept=".jpg,.jpeg,.png"
+                        onChange={handleFileChange}
+                        hidden
+                      />
+                      <label htmlFor="studentPhoto" className="upload-label">
+                        <Upload size={32} />
+                        <span>Student Photo *</span>
+                        {formData.studentPhoto ? (
+                          <span className="file-name">{formData.studentPhoto.name}</span>
+                        ) : (
+                          <span className="upload-hint">Click to upload</span>
+                        )}
+                      </label>
+                    </div>
+
+                    <div className="upload-box">
+                      <input
+                        type="file"
+                        id="fatherCNIC"
+                        name="fatherCNIC"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        onChange={handleFileChange}
+                        hidden
+                      />
+                      <label htmlFor="fatherCNIC" className="upload-label">
+                        <Upload size={32} />
+                        <span>Father's CNIC *</span>
+                        {formData.fatherCNIC ? (
+                          <span className="file-name">{formData.fatherCNIC.name}</span>
+                        ) : (
+                          <span className="upload-hint">Click to upload</span>
+                        )}
+                      </label>
+                    </div>
+
+                    <div className="upload-box">
+                      <input
+                        type="file"
+                        id="motherCNIC"
+                        name="motherCNIC"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        onChange={handleFileChange}
+                        hidden
+                      />
+                      <label htmlFor="motherCNIC" className="upload-label">
+                        <Upload size={32} />
+                        <span>Mother's CNIC</span>
+                        {formData.motherCNIC ? (
+                          <span className="file-name">{formData.motherCNIC.name}</span>
+                        ) : (
+                          <span className="upload-hint">Click to upload</span>
+                        )}
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="info-box">
+                    <AlertCircle size={20} />
+                    <div>
+                      <strong>Important:</strong>
+                      <p>Please ensure all documents are clear and legible. Accepted formats: PDF, JPG, PNG (Max 5MB each)</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Form Navigation */}
+              <div className="form-navigation">
+                {step > 1 && (
+                  <button
+                    type="button"
+                    className="btn btn-outline"
+                    onClick={handleBack}
+                  >
+                    Back
+                  </button>
+                )}
+
+                {step < 5 && (
+                  <button
+                    type="button"
+                    className="btn btn-primary"
+                    onClick={handleNext}
+                  >
+                    Continue
+                    <ChevronRight size={20} />
+                  </button>
+                )}
+
+                {step === 5 && (
+                  <button
+                    type="submit"
+                    className="btn btn-primary"
+                    disabled={loading}
+                  >
+                    {loading ? (
+                      <>
+                        <div className="spinner"></div>
+                        Submitting...
+                      </>
+                    ) : (
+                      <>
+                        <Send size={20} />
+                        Submit Application
+                      </>
+                    )}
+                  </button>
+                )}
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Registration;="password-input">
                       <input
                         type={showPassword ? 'text' : 'password'}
                         name="password"
@@ -882,4 +1116,15 @@ const Registration = ({ isLoggedIn, user }) => {
                       {errors.city && <span className="error-message">{errors.city}</span>}
                     </div>
 
-                    <div className
+                    </div>
+                    <div className="form-group">
+                      <label className="form-label">State/Province *</label>
+                      <input
+                        type="text"
+                        name="state"
+                        className="form-control"
+                        placeholder="Enter state"
+                        value={formData.state}
+                        onChange={handleInputChange}
+                        />
+                    </div>
