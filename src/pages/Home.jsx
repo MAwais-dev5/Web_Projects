@@ -67,7 +67,7 @@ const Home = ({ setCurrentPage }) => {
                 Established 1985
               </span>
               <h1 className="hero-title">
-                Welcome to <span className="highlight">Excellence International School</span>
+                Welcome to <span className="highlight">Govt Boys High School Tharushah</span>
               </h1>
               <p className="hero-description">
                 Nurturing young minds with quality education, character building, and holistic development. 
@@ -117,7 +117,7 @@ const Home = ({ setCurrentPage }) => {
       <section className="features-section section">
         <div className="container">
           <div className="section-title">
-            <h2>Why Choose Excellence School?</h2>
+            <h2>Why Choose GBHS School Tharushah?</h2>
             <p>Discover what makes us the preferred choice for quality education</p>
           </div>
           <div className="features-grid">
@@ -142,7 +142,7 @@ const Home = ({ setCurrentPage }) => {
             <div className="about-preview-text">
               <h2>Building Future Leaders Since 1985</h2>
               <p>
-                Excellence International School has been at the forefront of quality education for over 
+                Govt Boys High School Tharushah has been at the forefront of quality education for over 
                 three decades. Our commitment to academic excellence, character development, and holistic 
                 growth has made us one of the most trusted educational institutions.
               </p>

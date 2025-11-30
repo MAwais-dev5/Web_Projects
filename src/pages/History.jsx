@@ -29,17 +29,17 @@ const History = () => {
   // Timeline data
   const timelineData = [
     {
-      year: 1985,
+      year: 1900,
       decade: '1980s',
       title: 'Foundation & Early Years',
-      subtitle: 'The Beginning of Excellence',
-      description: 'Excellence International School was founded with a vision to provide world-class education in Sukkur, Sindh.',
+      subtitle: 'The Beginning of GBHS',
+      description: 'Govt Boys High School Tharushah was founded with a vision to provide world-class education in Tharushah, Sindh.',
       image: '/images/history/1985-foundation.jpg',
       milestones: [
         {
           date: 'January 1985',
           title: 'School Established',
-          description: 'Excellence International School opened its doors with 50 students and 8 dedicated teachers in a modest building.',
+          description: 'Govt Boys High School Tharushah opened its doors with 50 students and 8 dedicated teachers in a modest building.',
           icon: <Building />
         },
         {
@@ -193,7 +193,7 @@ const History = () => {
     {
       year: 2020,
       decade: '2020s',
-      title: 'Excellence in the Modern Era',
+      title: 'GBHS in the Modern Era',
       subtitle: 'Leading Education Forward',
       description: 'Adapted to hybrid learning, expanded facilities, and continued excellence despite global challenges.',
       image: '/images/history/2020-modern.jpg',
