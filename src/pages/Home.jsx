@@ -6,7 +6,7 @@ const Home = ({ setCurrentPage }) => {
   const stats = [
     { icon: <Users />, value: '2500+', label: 'Students' },
     { icon: <Award />, value: '150+', label: 'Expert Faculty' },
-    { icon: <BookOpen />, value: '38+', label: 'Years of Excellence' },
+    { icon: <BookOpen />, value: '38+', label: 'Years of GBHS' },
     { icon: <TrendingUp />, value: '95%', label: 'Success Rate' }
   ];
 
@@ -38,13 +38,13 @@ const Home = ({ setCurrentPage }) => {
       name: 'Sarah Ahmed',
       role: 'Parent',
       image: '/images/testimonials/parent1.jpg',
-      text: 'Excellence School has transformed my child\'s learning journey. The teachers are supportive and the environment is nurturing.'
+      text: 'Govt Boys High School Tharushah has transformed my child\'s learning journey. The teachers are supportive and the environment is nurturing.'
     },
     {
       name: 'Ali Hassan',
       role: 'Alumni',
       image: '/images/testimonials/alumni1.jpg',
-      text: 'The foundation I received at Excellence School prepared me for success in university and beyond.'
+      text: 'The foundation I received at Govt Boys High School Tharushah prepared me for success in university and beyond.'
     },
     {
       name: 'Fatima Khan',
@@ -64,7 +64,7 @@ const Home = ({ setCurrentPage }) => {
             <div className="hero-text">
               <span className="hero-badge">
                 <Star size={16} />
-                Established 1985
+                Established 1900
               </span>
               <h1 className="hero-title">
                 Welcome to <span className="highlight">Govt Boys High School Tharushah</span>
@@ -140,7 +140,7 @@ const Home = ({ setCurrentPage }) => {
               <img src="/images/about-preview.jpg" alt="Students Learning" />
             </div>
             <div className="about-preview-text">
-              <h2>Building Future Leaders Since 1985</h2>
+              <h2>Building Future Leaders Since 1900</h2>
               <p>
                 Govt Boys High School Tharushah has been at the forefront of quality education for over 
                 three decades. Our commitment to academic excellence, character development, and holistic 
@@ -198,7 +198,7 @@ const Home = ({ setCurrentPage }) => {
       <section className="cta-section">
         <div className="container">
           <div className="cta-content">
-            <h2>Ready to Join Our Excellence Family?</h2>
+            <h2>Ready to Join Our GBHS Family?</h2>
             <p>Start your journey towards academic excellence and holistic development</p>
             <button 
               className="btn btn-accent btn-lg"
