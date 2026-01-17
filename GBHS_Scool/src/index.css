@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+
+  --color-primary-50: color-mix(in srgb, royalblue 10%, white);
+  --color-primary-100: color-mix(in srgb, royalblue 20%, white);
+  --color-primary-200: color-mix(in srgb, royalblue 30%, white);
+  --color-primary-300: color-mix(in srgb, royalblue 40%, white);
+  --color-primary-400: color-mix(in srgb, royalblue 60%, white);
+  --color-primary-500: royalblue;
+  --color-primary-600: darkblue;
+  --color-primary-700: midnightblue;
+  --color-primary-800: navy;
+  --color-primary-900: color-mix(in srgb, navy 90%, black);
+
+  --color-secondary-50: color-mix(in srgb, mediumseagreen 10%, white);
+  --color-secondary-100: color-mix(in srgb, mediumseagreen 20%, white);
+  --color-secondary-200: color-mix(in srgb, mediumseagreen 30%, white);
+  --color-secondary-300: color-mix(in srgb, mediumseagreen 40%, white);
+  --color-secondary-400: color-mix(in srgb, mediumseagreen 60%, white);
+  --color-secondary-500: mediumseagreen;
+  --color-secondary-600: seagreen;
+  --color-secondary-700: forestgreen;
+
+  --color-accent-50: color-mix(in srgb, gold 10%, white);
+  --color-accent-100: color-mix(in srgb, gold 20%, white);
+  --color-accent-500: gold;
+  --color-accent-600: goldenrod;
+
+  --shadow-card: 0 4px 12px -2px rgb(0 0 0 / 0.08);
+  --shadow-card-hover: 0 8px 24px -4px rgb(0 0 0 / 0.12);
+}
+
+@layer base {
+  body {
+    @apply bg-primary-50 text-primary-900 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-primary-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-lg font-semibold
+           hover:bg-primary-600 transition-all duration-300 shadow-md;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 text-white px-6 py-3 rounded-lg font-semibold
+           hover:bg-secondary-600 transition-all duration-300 shadow-md;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 px-6 py-3 rounded-lg
+           hover:bg-primary-50 transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-white rounded-xl border border-primary-100
+           shadow-card hover:shadow-card-hover transition-all duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-primary-200
+           placeholder:text-primary-400 focus:ring-2 focus:ring-primary-300
+           focus:border-primary-400 transition;
+  }
+}
