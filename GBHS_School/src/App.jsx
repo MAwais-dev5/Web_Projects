@@ -4,7 +4,7 @@ import Home from './pages/Home'
 // import About from './pages/About'
 // import Gallery from './pages/Gallery'
 // import Registration from './pages/Registration'
-import Contact from './pages/Contact'
+// import Contact from './pages/Contact'
 // import FacultyList from './pages/FacultyList'
 // import SubjectFaculty from './pages/SubjectFaculty'
 
