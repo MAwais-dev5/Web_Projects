@@ -260,7 +260,7 @@ const Contact = () => {
               <h3 className="font-bold text-lg mb-4">Our Location</h3>
               <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
                 {/* Replace this with actual Google Maps embed */}
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-50 to-secondary-50">
+                <div className="w-full h-full flex items-center justify-center bg-[linear-gradient(to_bottom_right,rgb(236_253_245),rgb(240_253_250))]">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
